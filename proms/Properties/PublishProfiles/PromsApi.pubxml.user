@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\promsapi</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api/auth/signIn.aspx">
+      <publishTime>08/21/2019 15:14:47</publishTime>
+    </File>
+    <File Include="api/auth/signUp.aspx">
+      <publishTime>08/27/2019 13:39:52</publishTime>
+    </File>
+    <File Include="api/mpesa/callback.aspx">
+      <publishTime>08/27/2019 00:44:42</publishTime>
+    </File>
+    <File Include="api/payment/fetch.aspx">
+      <publishTime>08/27/2019 15:52:33</publishTime>
+    </File>
+    <File Include="api/payment/make-payment.aspx">
+      <publishTime>08/26/2019 22:32:10</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>10/17/2012 12:31:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/02/2019 13:35:13</publishTime>
+    </File>
+    <File Include="bin/proms.dll">
+      <publishTime>08/27/2019 17:36:35</publishTime>
+    </File>
+    <File Include="config/api.config.json">
+      <publishTime>08/26/2019 20:18:41</publishTime>
+    </File>
+    <File Include="models/auth/model.config.json">
+      <publishTime>08/21/2019 15:24:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/27/2019 14:09:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

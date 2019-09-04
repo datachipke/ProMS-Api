@@ -1,0 +1,9 @@
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\proms.dll.config
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\proms.dll
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\proms.pdb
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\MySql.Data.dll
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\Newtonsoft.Json.dll
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\bin\Newtonsoft.Json.xml
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\obj\Release\proms.csprojResolveAssemblyReference.cache
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\obj\Release\proms.dll
+C:\Users\Derek\Documents\DevOps\Windows\DatachipPROMS\proms\proms\obj\Release\proms.pdb

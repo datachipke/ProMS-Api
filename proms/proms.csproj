@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B6E0094-A759-4715-8564-EB8216204784}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proms</RootNamespace>
+    <AssemblyName>proms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\VisualStudio\webreports\finapac\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\VisualStudio\finapacweb\finapac\finapac\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="api\account\update.aspx" />
+    <Content Include="api\auth\requestResetPassword.aspx" />
+    <Content Include="api\auth\resetPassword.aspx" />
+    <Content Include="api\auth\signIn.aspx" />
+    <Content Include="api\auth\signUp.aspx" />
+    <Content Include="api\mpesa\callback.aspx" />
+    <Content Include="api\payment\fetch.aspx" />
+    <Content Include="api\payment\make-payment.aspx" />
+    <Content Include="api\reports\rptGeneric.aspx" />
+    <Content Include="api\test\payLoad.aspx" />
+    <Content Include="api\test\searchPayload.aspx" />
+    <Content Include="api\test\stkPush.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\account\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\account\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\auth\requestResetPassword.aspx.cs">
+      <DependentUpon>requestResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\auth\requestResetPassword.aspx.designer.cs">
+      <DependentUpon>requestResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\auth\resetPassword.aspx.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\auth\resetPassword.aspx.designer.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\auth\signIn.aspx.cs">
+      <DependentUpon>signIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\auth\signIn.aspx.designer.cs">
+      <DependentUpon>signIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\auth\signUp.aspx.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\auth\signUp.aspx.designer.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\mpesa\callback.aspx.cs">
+      <DependentUpon>callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\mpesa\callback.aspx.designer.cs">
+      <DependentUpon>callback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\payment\fetch.aspx.cs">
+      <DependentUpon>fetch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\payment\fetch.aspx.designer.cs">
+      <DependentUpon>fetch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\payment\make-payment.aspx.cs">
+      <DependentUpon>make-payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\payment\make-payment.aspx.designer.cs">
+      <DependentUpon>make-payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\reports\rptGeneric.aspx.cs">
+      <DependentUpon>rptGeneric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\reports\rptGeneric.aspx.designer.cs">
+      <DependentUpon>rptGeneric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\test\payLoad.aspx.cs">
+      <DependentUpon>payLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\test\payLoad.aspx.designer.cs">
+      <DependentUpon>payLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\test\searchPayload.aspx.cs">
+      <DependentUpon>searchPayload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\test\searchPayload.aspx.designer.cs">
+      <DependentUpon>searchPayload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\test\stkPush.aspx.cs">
+      <DependentUpon>stkPush.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\test\stkPush.aspx.designer.cs">
+      <DependentUpon>stkPush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controllers\AccountController.cs" />
+    <Compile Include="controllers\AuthController.cs" />
+    <Compile Include="controllers\MpesaController.cs" />
+    <Compile Include="controllers\TestController.cs" />
+    <Compile Include="handlers\DatabaseHandler.cs" />
+    <Compile Include="controllers\PaymentController.cs" />
+    <Compile Include="handlers\models\SearchModel.cs" />
+    <Compile Include="handlers\RequestHandler.cs" />
+    <Compile Include="models\auth\SignIn.cs" />
+    <Compile Include="models\client\Client.cs" />
+    <Compile Include="models\common\Commoner.cs" />
+    <Compile Include="models\common\Email.cs" />
+    <Compile Include="models\common\KeyValue.cs" />
+    <Compile Include="models\common\Request.cs" />
+    <Compile Include="models\common\Response.cs" />
+    <Compile Include="models\common\SmsMessage.cs" />
+    <Compile Include="models\common\STKCallbackResponse.cs" />
+    <Compile Include="models\common\STKPush.cs" />
+    <Compile Include="models\common\STKPushResponse.cs" />
+    <Compile Include="models\payment\PaymentModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="servers\Database.cs" />
+    <Compile Include="utils\RequestService.cs" />
+    <Compile Include="utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\api.config.json" />
+    <Content Include="models\auth\model.config.json" />
+    <None Include="Properties\PublishProfiles\PromsApi.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libs\" />
+    <Folder Include="resources\reports\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44109</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44109/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
